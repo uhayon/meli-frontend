@@ -1,0 +1,30 @@
+.search-bar {
+  padding: 10px;
+  background-color: #FFE600;
+  display: flex;
+  justify-content: center;
+}
+.search-bar > .searchInput {
+  margin-left: 1em;
+  width: 50%;
+  display: flex;
+}
+.search-bar > .searchInput > input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+  padding: 10px;
+  font-size: 18px;
+}
+.search-bar > .searchInput .searchIconContainer {
+  display: flex;
+  background-color: #EEEEEE;
+  border-radius: 0 5px 5px 0;
+}
+.search-bar > .searchInput .searchIconContainer > img {
+  align-self: center;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=index.css.map */

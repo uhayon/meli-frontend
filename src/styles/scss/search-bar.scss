@@ -1,0 +1,28 @@
+.search-bar {
+  padding: 10px;
+  background-color: $yellow-main;
+  display: flex;
+  justify-content: center;
+  > .searchInput {
+    margin-left: 1em;
+    width: 50%;
+    display: flex;
+    > input {
+      flex-grow: 1;
+      border: none;
+      outline: none;
+      border-radius: 5px 0 0 5px;
+      padding: 10px;
+      font-size: 18px;
+    }
+    .searchIconContainer {
+      display: flex;
+      background-color: $gray-light;
+      border-radius: 0 5px 5px 0;
+      > img {
+        align-self: center;
+        padding: 10px;
+      }
+    }
+  }
+}
