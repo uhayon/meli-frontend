@@ -1,30 +1,26 @@
-import React, { Component } from 'react';
-import { BrowserRouter } from 'react-router-dom';
-import SearchBar from './Components/SearchBar';
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import SearchBar from './components/SearchBar';
+import SearchResults from './components/SearchResults';
+import ItemDetail from './components/ItemDetail';
 
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      searchText: '',
-      items: []
-    }
-  }
-
-  onSearchTextChange = (event) => {
-    this.setState({searchText: event.target.value});
-  }
-
-  render() {
-    return (
+const App = () => {
+  return (
+    <BrowserRouter>
       <div>
-        <SearchBar />
-        <BrowserRouter>
-
-        </BrowserRouter>
+        <Route path='/'
+          component={SearchBar} />
+        <Switch>
+          <Route exact path='/items'
+            render={props =>
+              <SearchResults
+                {...props} />
+            } />
+          <Route exact path='/items/:id'
+            component={ItemDetail} />
+        </Switch>
       </div>
-    );
-  }
+    </BrowserRouter>
+  );
 };
-
 export default App;

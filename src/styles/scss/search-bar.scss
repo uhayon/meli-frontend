@@ -3,6 +3,9 @@
   background-color: $yellow-main;
   display: flex;
   justify-content: center;
+  > .meliLogo {
+    cursor: pointer;
+  }
   > .searchInput {
     margin-left: 1em;
     width: 50%;
@@ -19,6 +22,7 @@
       display: flex;
       background-color: $gray-light;
       border-radius: 0 5px 5px 0;
+      cursor: pointer;
       > img {
         align-self: center;
         padding: 10px;
