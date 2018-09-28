@@ -1,0 +1,9 @@
+.search-result-container {
+  display: flex;
+  justify-content: center;
+}
+.search-result-container > div {
+  width: 75%;
+}
+
+/*# sourceMappingURL=search-result-container.css.map */

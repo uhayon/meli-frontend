@@ -1,0 +1,6 @@
+.search-result-list {
+  background: #FFFFFF;
+  > .search-result-row:not(:last-child) {
+    border-bottom: 1px solid $gray-light;
+  }
+}

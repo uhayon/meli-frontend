@@ -1,0 +1,27 @@
+.search-result-row {
+  cursor: pointer;
+  display: flex;
+  margin: 16px 0;
+}
+.search-result-row > img {
+  margin: 0 16px;
+  width: 180px;
+  height: 180px;
+  border-radius: 4px;
+}
+.search-result-row > div .price-container {
+  display: flex;
+  margin-bottom: 32px;
+}
+.search-result-row > div .price-container > h2 {
+  font-size: 24px;
+}
+.search-result-row > div .price-container > img {
+  align-self: center;
+  margin-left: 16px;
+}
+.search-result-row > div span {
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=search-result-row.css.map */

@@ -48,21 +48,23 @@ class SearchBar extends Component {
 
     return (
       <div className='search-bar'>
-        <img
-          src={Logo}
-          alt='Logo'
-          onClick={() => history.push('/') }
-          className='meliLogo'/>
-        <div className='searchInput'>
-          <input
-            type='text'
-            placeholder='Nunca dejes de buscar'
-            value={searchText}
-            onChange={onSearchTextChange} />
-          <div
-            className='searchIconContainer'
-            onClick={onSearchConfirm} >
-            <img src={SearchIcon} alt='Search'/>
+        <div>
+          <img
+            src={Logo}
+            alt='Logo'
+            onClick={() => history.push('/') }
+            className='meliLogo'/>
+          <div className='searchInput'>
+            <input
+              type='text'
+              placeholder='Nunca dejes de buscar'
+              value={searchText}
+              onChange={onSearchTextChange} />
+            <div
+              className='searchIconContainer'
+              onClick={onSearchConfirm} >
+              <img src={SearchIcon} alt='Search'/>
+            </div>
           </div>
         </div>
       </div>

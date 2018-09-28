@@ -4,21 +4,30 @@ body {
   font-family: sans-serif;
 }
 
+#root {
+  background-color: #EEEEEE;
+}
+
 .search-bar {
-  padding: 10px;
   background-color: #FFE600;
   display: flex;
   justify-content: center;
 }
-.search-bar > .meliLogo {
+.search-bar > div {
+  width: 75%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.search-bar > div > .meliLogo {
   cursor: pointer;
 }
-.search-bar > .searchInput {
+.search-bar > div > .searchInput {
   margin-left: 1em;
-  width: 50%;
   display: flex;
+  flex-grow: 1;
 }
-.search-bar > .searchInput > input {
+.search-bar > div > .searchInput > input {
   flex-grow: 1;
   border: none;
   outline: none;
@@ -26,15 +35,64 @@ body {
   padding: 10px;
   font-size: 18px;
 }
-.search-bar > .searchInput .searchIconContainer {
+.search-bar > div > .searchInput .searchIconContainer {
   display: flex;
   background-color: #EEEEEE;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
 }
-.search-bar > .searchInput .searchIconContainer > img {
+.search-bar > div > .searchInput .searchIconContainer > img {
   align-self: center;
   padding: 10px;
+}
+
+.breadcrumbContainer {
+  margin: 16px 0;
+  font-size: 14px;
+}
+.breadcrumbContainer .currentCategory {
+  font-weight: bold;
+}
+
+.search-result-row {
+  cursor: pointer;
+  display: flex;
+  margin: 16px 0;
+}
+.search-result-row > img {
+  margin: 0 16px;
+  width: 180px;
+  height: 180px;
+  border-radius: 4px;
+}
+.search-result-row > div .price-container {
+  display: flex;
+  margin-bottom: 32px;
+}
+.search-result-row > div .price-container > h2 {
+  font-size: 24px;
+}
+.search-result-row > div .price-container > img {
+  align-self: center;
+  margin-left: 16px;
+}
+.search-result-row > div span {
+  font-size: 18px;
+}
+
+.search-result-container {
+  display: flex;
+  justify-content: center;
+}
+.search-result-container > div {
+  width: 75%;
+}
+
+.search-result-list {
+  background: #FFFFFF;
+}
+.search-result-list > .search-result-row:not(:last-child) {
+  border-bottom: 1px solid #EEEEEE;
 }
 
 /*# sourceMappingURL=index.css.map */
