@@ -62,6 +62,7 @@ class SearchResults extends Component {
 
   render() {
     const { items, validSearch, searchFinished, categories } = this.state;
+    const { history } = this.props;
     return (
       <div className='search-result-container'>
         {
@@ -71,7 +72,7 @@ class SearchResults extends Component {
             items.length > 0
             ? <div>
                 <CategoriesBreadcrumb categories={categories} />
-                <SearchResultsList items={items} />
+                <SearchResultsList items={items} history={history} />
               </div>
             : (
               searchFinished

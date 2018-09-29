@@ -1,0 +1,10 @@
+.item-detail-container {
+  display: flex;
+  justify-content: center;
+  > div {
+    width: 75%;
+  }
+  .item-detail {
+    background-color: #FFFFFF;
+  }
+}

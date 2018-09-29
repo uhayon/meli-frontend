@@ -1,0 +1,32 @@
+.item-detail-header {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 32px;
+  > img {
+    width: 680px;
+    align-self: center;
+  }
+  .buy-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    margin-left: 32px;
+    > .buy-box-title {
+      margin-top: 16px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    > .buy-box-price {
+      margin: 32px 0;
+      font-size: 46px;
+    }
+    > .buy-button {
+      text-decoration: none;
+      background-color: $blue;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 16px;
+      border-radius: 4px;
+    }
+  }
+}

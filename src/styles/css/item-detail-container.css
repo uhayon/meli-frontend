@@ -1,0 +1,12 @@
+.item-detail-container {
+  display: flex;
+  justify-content: center;
+}
+.item-detail-container > div {
+  width: 75%;
+}
+.item-detail-container .item-detail {
+  background-color: #FFFFFF;
+}
+
+/*# sourceMappingURL=item-detail-container.css.map */

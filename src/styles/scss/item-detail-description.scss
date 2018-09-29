@@ -1,0 +1,14 @@
+.item-detail-description {
+  display: flex;
+  flex-direction: column;
+  margin: 32px;
+  margin-top: 16px;
+  > span:first-child {
+    font-size: 28px;
+  }
+  > span:last-child {
+    font-size: 16px;
+    margin: 32px 0;
+    color: $gray-dark;
+  }
+}

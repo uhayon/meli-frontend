@@ -42,8 +42,14 @@ class SearchBar extends Component {
     this.setState({searchText});
   }
 
+  onInputKeyPress = (event) => {
+    const { charCode } = event;
+    if (charCode === 13)
+      this.onSearchConfirm();
+  }
+
   render() {
-    const { state: {searchText}, onSearchTextChange, onSearchConfirm } = this;
+    const { state: {searchText}, onSearchTextChange, onSearchConfirm, onInputKeyPress } = this;
     const { history } = this.props;
 
     return (
@@ -59,7 +65,8 @@ class SearchBar extends Component {
               type='text'
               placeholder='Nunca dejes de buscar'
               value={searchText}
-              onChange={onSearchTextChange} />
+              onChange={onSearchTextChange}
+              onKeyPress={onInputKeyPress} />
             <div
               className='searchIconContainer'
               onClick={onSearchConfirm} >
