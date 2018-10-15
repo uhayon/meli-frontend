@@ -5,6 +5,7 @@ import SearchResults from './components/SearchResults';
 import ItemDetail from './components/ItemDetail';
 
 const App = () => {
+  //Cambio para commitear con ssh
   return (
     <BrowserRouter>
       <div>
