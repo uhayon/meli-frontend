@@ -5,7 +5,7 @@ const SearchResultRow = ({ item, history }) => {
   const { id, picture, price: {amount}, free_shipping, title } = item;
   return (
     <div className='search-result-row' onClick={() => history.push(`/items/${id}`)}>
-      <img src={picture} alt='Producto'/>
+      <img src={picture} alt={title}/>
       <div>
         <div className='price-container'>
           <h2>{`$ ${amount}`}</h2>

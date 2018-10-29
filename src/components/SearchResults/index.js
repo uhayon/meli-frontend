@@ -31,8 +31,9 @@ class SearchResults extends Component {
 
   searchItems = (searchValid) => {
     if (searchValid) {
+      const API_PREFIX = 'http://localhost:3000/api/items?q=';
       const { search } = queryString.parse(this.props.location.search);
-      axios.get(`http://localhost:3000/api/items?q=${search}`)
+      axios.get(`${API_PREFIX}${search}`)
       .then(response => {
         const { data } = response;
         this.setState({
@@ -76,7 +77,7 @@ class SearchResults extends Component {
               </div>
             : (
               searchFinished
-              ? <h1>No se encontraron productos con tu criterio de búsqueda</h1>
+              ? <h1>No se encontraron productos con tu criterio de búsqueda.</h1>
               : null
             )
           )
